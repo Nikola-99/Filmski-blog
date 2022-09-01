@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Bioskop | Rezervacije</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html">BioskopAPP</a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./index.html">Početna</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+                <li><a href="./galerija.html">Galerija</a></li>
+                <li><a class="active" href="./rezervacije.html">Rezervacije</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="rezervacije">
+        <h1>Rezervacije karata</h1>
+        <div class="aplikacija">
+
+            <label for="film">Film</label>
+            <select name="film" id="film">
+                <option value="350">Matrix 4</option>
+                <option value="300">Shrek 4</option>
+                <option value="330">Frozen 3</option>
+                <option value="250">Kill Boll vol.3</option>
+                <option value="300">James Bond 007</option>
+            </select>
+
+            <label for="brojKarata">Broj Karata</label>
+            <input type="number" id="brojKarata">
+
+            <label for="tipKarte">Tip karte</label>
+            <select name="tipKarte" id="tipKarte">
+                <option value="1">Regular</option> <!-- bez popusta -->
+                <option value="0.8">Studentska</option> <!-- 20% popust-->
+                <option value="0.7">Dečija</option> <!-- 30% popust-->
+            </select>
+            <button onclick="rezervacija()">Rezerviši</button>
+            <h3 id="racun">Račun: 0.00 RSD</h3>
+        </div>
+    </div>
+
+    <div class="footer">
+    
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
